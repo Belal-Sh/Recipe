@@ -1,4 +1,5 @@
 # Getting Started with Recipes
+please use node version above v16
 prepare :
 1- making .env and add REACT_APP_API_SECRET_KEY=YOUR_SECRET_KEY
 2-npm install
