@@ -1,0 +1,70 @@
+.cardWrap {
+  width: 24rem;
+  text-decoration: none;
+  color: black;
+}
+.cardInner:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px 9px 2px green;
+}
+.imageContainer {
+  width: 100%;
+  min-height: 10rem;
+}
+
+.cardItem {
+  padding: 1rem;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.cardInner {
+  background: white;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.generItem {
+  padding: 0.75rem;
+}
+
+.recipeTitle {
+  white-space: nowrap;
+}
+
+.recipeTitle,
+.recipeBrief {
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.recipeBrief {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.buttonRedirect {
+  color: black;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: block;
+  margin-left: auto;
+  background: #eeeff4;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .cardItem {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cardWrap {
+    width: 20rem;
+  }
+}
