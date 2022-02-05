@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { getRecipeSerch } from '../api/services';
-import { debounce, HOME_ROUTE, ITEMS_PAGINATION } from '../utils/utils';
-import {  useLocation } from 'react-router-dom';
+import { debounce, ITEMS_PAGINATION } from '../utils/utils';
+
 
 const useInfiniteScroll = (params) => {
-    const location = useLocation()
     const offset = useRef(0)
     const results = useRef([])
     const [total, setTotal] = useState(0)
@@ -44,7 +43,6 @@ const useInfiniteScroll = (params) => {
 
 
     useEffect(() => {
-        debugger
         if (params?.item) {
 
             if ((params?.item !== isChangeParam)) {
